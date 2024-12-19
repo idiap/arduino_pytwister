@@ -3,7 +3,7 @@ jobs:
     runs-on: ubuntu-latest
     name: qa
     steps:
-      run: 
+      - run: 
         - pip install pre-commit
         - pre-commit run --all-files
 
@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     name: build
     steps:
-      run:
+      - run:
         - pip install . --no-cache
